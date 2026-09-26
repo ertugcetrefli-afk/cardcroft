@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cardcroft Destek</title>
+<meta name="description" content="Cardcroft: Harman destek, sık sorulan sorular ve gizlilik politikası.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#a8d5a2; --paper:#f7f1e3; --ink:#3d2b1f; --muted:#6b5646; --line:#5a4232;
+  --red:#a83232; --green:#5b6e2e; --gold:#d9a02b; --blue:#2c4a7a;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#1f2b1d; --paper:#2b241d; --ink:#f1e7d3; --muted:#c7b59c; --line:#1a130e;
+         --red:#c24848; --green:#8aa04f; --gold:#e5b248; --blue:#7fa2dc; }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "Nunito Sans",system-ui,sans-serif}
+header{background:var(--red);color:#fff8ea;padding:40px 16px 32px;text-align:center;border-bottom:4px solid var(--line)}
+header h1{font:800 clamp(34px,8vw,52px)/1.05 Alegreya,Georgia,serif;margin:0}
+header p{margin:10px 0 0;font-weight:600;opacity:.92}
+.lang{display:inline-flex;gap:6px;margin-top:20px}
+.lang button{font:700 14px "Nunito Sans",sans-serif;padding:7px 16px;border-radius:999px;border:2px solid #fff8ea;background:transparent;color:#fff8ea;cursor:pointer}
+.lang button[aria-pressed="true"]{background:#fff8ea;color:var(--red)}
+main{max-width:760px;margin:0 auto;padding:24px 16px 48px}
+.card{background:var(--paper);border:3px solid var(--line);border-radius:14px;box-shadow:0 5px 0 var(--line);margin:0 0 28px;overflow:hidden}
+.card h2{margin:0;padding:10px 20px;font:800 24px/1.3 Alegreya,Georgia,serif;color:#fff8ea}
+.card .body{padding:18px 20px 20px}
+.c-green h2{background:var(--green)} .c-gold h2{background:var(--gold);color:#3d2b1f} .c-blue h2{background:var(--blue)}
+@media (prefers-color-scheme: dark){ .c-blue h2{background:#2c4a7a} .c-green h2{background:#5b6e2e} }
+h3{font:700 18px/1.4 "Nunito Sans",sans-serif;margin:18px 0 4px}
+h3:first-child{margin-top:0}
+p{margin:0 0 10px}
+ul{margin:0 0 10px;padding-left:22px}
+a{color:var(--red);font-weight:700}
+.mail{display:inline-block;margin:6px 0 4px;padding:10px 18px;border-radius:10px;background:var(--red);color:#fff8ea;text-decoration:none;word-break:break-all}
+.small{color:var(--muted);font-size:15px}
+footer{text-align:center;color:var(--ink);font-size:14px;padding:0 16px 32px;opacity:.8}
+[data-l]{display:none}
+html[lang="tr"] [data-l="tr"], html[lang="en"] [data-l="en"]{display:revert}
+</style>
+</head>
+<body>
+<header>
+  <h1>Cardcroft</h1>
+  <p data-l="tr">Harman · Bir masa, bir paket, bir köy.</p>
+  <p data-l="en">One table, one pack, one village.</p>
+  <div class="lang" role="group" aria-label="Dil / Language">
+    <button type="button" data-set="tr" aria-pressed="true">Türkçe</button>
+    <button type="button" data-set="en" aria-pressed="false">English</button>
+  </div>
+</header>
+
+<main>
+  <section class="card c-green" id="destek">
+    <h2 data-l="tr">Destek</h2><h2 data-l="en">Support</h2>
+    <div class="body">
+      <p data-l="tr">Bir hata mı buldun, bir sorun mu yaşıyorsun ya da bir önerin mi var? Bana e-postayla yaz; genellikle birkaç gün içinde dönüş yaparım.</p>
+      <p data-l="en">Found a bug, having a problem or have a suggestion? Send me an email; I usually reply within a few days.</p>
+      <a class="mail" href="mailto:ertugc@icloud.com?subject=Cardcroft">ertugc@icloud.com</a>
+      <p class="small" data-l="tr">Yazarken cihaz modelini, iOS/Android sürümünü ve sorunun nasıl oluştuğunu eklersen daha hızlı yardımcı olabilirim.</p>
+      <p class="small" data-l="en">Including your device model, iOS/Android version and the steps that led to the problem helps me respond faster.</p>
+    </div>
+  </section>
+
+  <section class="card c-gold" id="sss">
+    <h2 data-l="tr">Sık sorulan sorular</h2><h2 data-l="en">Frequently asked questions</h2>
+    <div class="body">
+      <div data-l="tr">
+        <h3>Oyunum nereye kaydediliyor?</h3>
+        <p>Köylerin cihazında saklanır. Game Center (iOS) ya da Google Play Oyunlar (Android) oturumu açıksa Ayarlar’daki <b>bulut kaydı</b> ile köyünü hesabına da yedekleyebilirsin.</p>
+        <h3>Köyümü başka bir cihaza nasıl taşırım?</h3>
+        <p>Bulut kaydını kullanabilir ya da menüdeki <b>Köyü dışa aktar</b> seçeneğiyle kaydını bir dosya olarak alıp yeni cihazda <b>Köyü içe aktar</b> ile yükleyebilirsin.</p>
+        <h3>Tam sürümü aldım, yeni telefonda nasıl açarım?</h3>
+        <p>Aynı Apple ID ya da Google hesabıyla giriş yapıp Ayarlar’daki <b>Satın alımı geri yükle</b> düğmesine dokun.</p>
+        <h3>Düşmanlar çok zorlaştı, ne yapabilirim?</h3>
+        <p>Yeni bir köy kurarken gün uzunluğunu ayarlayabilir ya da düşmanların gelmediği huzurlu modu seçebilirsin.</p>
+        <h3>Oyun internet istiyor mu?</h3>
+        <p>Hayır. Cardcroft çevrimdışı oynanır; yalnızca satın alma ve bulut kaydı için internet gerekir.</p>
+      </div>
+      <div data-l="en">
+        <h3>Where is my game saved?</h3>
+        <p>Your villages are stored on your device. If you are signed in to Game Center (iOS) or Google Play Games (Android), you can also back them up to your account with <b>cloud save</b> in Settings.</p>
+        <h3>How do I move my village to another device?</h3>
+        <p>Use cloud save, or use <b>Export village</b> in the menu to save your village as a file and load it on the new device with <b>Import village</b>.</p>
+        <h3>I bought the full version. How do I unlock it on a new phone?</h3>
+        <p>Sign in with the same Apple ID or Google account and tap <b>Restore purchase</b> in Settings.</p>
+        <h3>The enemies are too hard, what can I do?</h3>
+        <p>When starting a new village you can change the day length or pick peaceful mode, where no enemies appear.</p>
+        <h3>Does the game need an internet connection?</h3>
+        <p>No. Cardcroft plays offline; an internet connection is only needed for purchases and cloud save.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card c-blue" id="gizlilik">
+    <h2 data-l="tr">Gizlilik politikası</h2><h2 data-l="en">Privacy policy</h2>
+    <div class="body">
+      <div data-l="tr">
+        <p class="small">Son güncelleme: 26 Eylül 2026</p>
+        <p>Cardcroft: Harman (“oyun”) gizliliğine saygı duyar. Kısaca: <b>oyun ad, e-posta, konum ya da rehber gibi kişisel bilgi istemez; reklam, analiz ya da izleme aracı içermez.</b></p>
+        <h3>Satın almalar</h3>
+        <p>Tam sürüm satın alımı App Store ya da Google Play üzerinden yapılır; ödeme bilgilerin bize hiç gelmez. Satın alımı doğrulamak ve başka cihazda geri yükleyebilmek için <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat</a> hizmetini kullanırız. RevenueCat’e rastgele bir uygulama kullanıcı kimliği ve satın alma geçmişin (hangi ürün, ne zaman) iletilir. Bu bilgiler yalnızca satın alımı doğrulamak için kullanılır, reklam ya da izleme amacıyla kullanılmaz ve satılmaz.</p>
+        <h3>Oyun kayıtları</h3>
+        <p>Köylerin ve ayarların cihazında saklanır. Uygulamayı silmek bu verileri de siler.</p>
+        <h3>Game Center ve Google Play Oyunlar</h3>
+        <p>Game Center (iOS) ya da Google Play Oyunlar (Android) oturumun açıksa başarımların ve bulut kaydın bu hesaba yazılır. Bu işlemler Apple’ın <a href="https://www.apple.com/legal/privacy/" rel="noopener">gizlilik politikasına</a> ya da Google’ın <a href="https://policies.google.com/privacy" rel="noopener">gizlilik politikasına</a> tabidir. Oturum açmak isteğe bağlıdır.</p>
+        <h3>Çocuklar</h3>
+        <p>Oyun çocuklara yönelik değildir ve bilerek hiçbir çocuğun kişisel verisini toplamaz.</p>
+        <h3>Verilerin silinmesi</h3>
+        <p>Satın alma kayıtlarının silinmesini istersen aşağıdaki adrese yazabilirsin.</p>
+        <h3>Değişiklikler ve iletişim</h3>
+        <p>Bu politika değişirse güncel hali bu sayfada yayımlanır. Sorularını <a href="mailto:ertugc@icloud.com">ertugc@icloud.com</a> adresine iletebilirsin.</p>
+      </div>
+      <div data-l="en">
+        <p class="small">Last updated: September 26, 2026</p>
+        <p>Cardcroft (“the game”) respects your privacy. In short: <b>the game does not ask for personal information such as your name, email, location or contacts, and contains no advertising, analytics or tracking tools.</b></p>
+        <h3>Purchases</h3>
+        <p>The full version is purchased through the App Store or Google Play; your payment details never reach us. To verify purchases and let you restore them on other devices we use <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat</a>. A random app user ID and your purchase history (which product, when) are sent to RevenueCat. This is used only to verify purchases; it is not used for advertising or tracking and is never sold.</p>
+        <h3>Game saves</h3>
+        <p>Your villages and settings are stored on your device. Deleting the app deletes this data.</p>
+        <h3>Game Center and Google Play Games</h3>
+        <p>If you are signed in to Game Center (iOS) or Google Play Games (Android), your achievements and cloud save are stored in that account. This is governed by Apple’s <a href="https://www.apple.com/legal/privacy/" rel="noopener">privacy policy</a> or Google’s <a href="https://policies.google.com/privacy" rel="noopener">privacy policy</a>. Signing in is optional.</p>
+        <h3>Children</h3>
+        <p>The game is not directed at children and does not knowingly collect personal data from any child.</p>
+        <h3>Deleting your data</h3>
+        <p>To request deletion of your purchase records, write to the address below.</p>
+        <h3>Changes and contact</h3>
+        <p>If this policy changes, the updated version will be published on this page. Send questions to <a href="mailto:ertugc@icloud.com">ertugc@icloud.com</a>.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 Cardcroft</footer>
+
+<script>
+(function(){
+  var html=document.documentElement, btns=document.querySelectorAll('.lang button');
+  function set(l){
+    html.lang=l;
+    for(var i=0;i<btns.length;i++) btns[i].setAttribute('aria-pressed', btns[i].getAttribute('data-set')===l);
+    try{ localStorage.setItem('cc-lang',l); }catch(e){}
+  }
+  var saved=null; try{ saved=localStorage.getItem('cc-lang'); }catch(e){}
+  var q=location.search.match(/lang=(tr|en)/);
+  set(q ? q[1] : saved || ((navigator.language||'').toLowerCase().indexOf('tr')===0 ? 'tr' : 'en'));
+  for(var i=0;i<btns.length;i++) btns[i].addEventListener('click', function(){ set(this.getAttribute('data-set')); });
+})();
+</script>
+</body>
+</html>
